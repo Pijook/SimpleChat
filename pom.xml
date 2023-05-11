@@ -13,6 +13,30 @@
         <maven.compiler.target>18</maven.compiler.target>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>pl.pijok</groupId>
+                <artifactId>SimpleChat</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <!-- Here come other details
+                ...
+                -->
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>pl.pijok.simpleChat.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <!-- Here come other details
+                ...
+                -->
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.esotericsoftware/kryonet -->
         <dependency>
